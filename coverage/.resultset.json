@@ -1,0 +1,26 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/home/codio/workspace/sweng-project-john-french/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/sweng-project-john-french/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1649087015
+  }
+}
