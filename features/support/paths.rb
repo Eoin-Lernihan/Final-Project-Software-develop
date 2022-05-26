@@ -16,7 +16,10 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
 
-    # Add more mappings here.
+    when /^the new\s?page$/
+      'new'
+
+      # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
     #   when /^(.*)'s profile page$/i

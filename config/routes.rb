@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :game_reviews
+  resources :reviews_games
   resources :games
   resources :games
-  root "games#index"
+  root "game_reviews#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

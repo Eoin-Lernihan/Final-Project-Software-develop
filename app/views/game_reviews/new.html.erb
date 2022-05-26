@@ -1,0 +1,28 @@
+<h1>New Game Review</h1>
+
+<%= form_tag game_reviews_path, :class => 'form' do %>
+  <%= label :game_review, :name, 'Name', :class => 'col-form-label' %>
+  <%= text_field :game_review, :name, :class => 'form-control' %><br>
+  
+  <%= label :game_review, :developer, 'Developer', :class => 'col-form-label' %>
+  <%= text_field :game_review, :developer, :class => 'form-control' %><br>
+
+  <%= label :game_review, :stars, 'Stars', :class => 'col-form-label'  %>
+  <%= select :game_review, :stars, ['0','1','2','3','4', '5'], {}, {:class => 'form-control col-1'} %><br>
+
+  <%= label :game_review, :genre, 'Genre', :class => 'col-form-label'  %>
+  <%= select :game_review, :genre,['Action','Adventure','Puzzle','Role-playing','Simulation','Strategy','Sports','MMO','Open-world','Other'], {}, :class => 'form-control col-2 d-inline' %><br>
+  
+  <%= label :game_review, :description, 'Description', :class => 'col-form-label' %>
+  <%= text_area :game_review, :description, :class => 'form-control' %><br>
+  
+  <%= label :game_review, :review, 'Review', :class => 'col-form-label' %>
+  <%= text_area :game_review, :review, :class => 'form-control' %><br>
+  <br/>
+  <%= submit_tag 'Save Changes', :class => 'btn btn-primary' %>
+  <%= link_to 'Cancel', game_reviews_path, :class => 'btn btn-secondary' %>
+
+
+  
+<% end %>
+

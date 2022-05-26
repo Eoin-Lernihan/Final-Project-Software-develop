@@ -8,7 +8,6 @@ class CreateGames < ActiveRecord::Migration
       t.text :reveiw
       t.int :stars
       t.datetime :release_date
-      t.timestamps
     end
   end
 end

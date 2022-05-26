@@ -1,0 +1,26 @@
+<h1>Editing Game Review</h1>
+<h1>Editing Reviews Game</h1>
+<h2>test to see changes</h2>
+<%= form_for(@game_review) do |f| %>
+  <% if @game_review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game_review.errors.count, "error") %> prohibited this game_review from being saved:</h2>
+     <ul>
+      <% @game_review.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :review %><br>
+    <%= f.text_area :review %>
+  </div>
+  <div class="field">
+    <%= f.label :stars %><br>
+    <%= f.number_field :stars %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

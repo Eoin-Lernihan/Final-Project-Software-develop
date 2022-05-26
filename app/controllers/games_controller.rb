@@ -3,11 +3,14 @@ class GamesController < ApplicationController
 
   # GET /games
   def index
-    @games = Game.all
+    @games = Game.order(params[:sort])
+    #@games = Game.all
   end
 
   # GET /games/1
   def show
+    id = params[:id]
+    @games = Game.find(id)
   end
 
   # GET /games/new

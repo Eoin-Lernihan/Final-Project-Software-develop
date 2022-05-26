@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reviews_game.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @reviews_game.type %>
+</p>
+
+<p>
+  <strong>Developer:</strong>
+  <%= @reviews_game.developer %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @reviews_game.description %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @reviews_game.review %>
+</p>
+
+<p>
+  <strong>Stars:</strong>
+  <%= @reviews_game.stars %>
+</p>
+
+<%= link_to 'Edit', edit_reviews_game_path(@reviews_game) %> |
+<%= link_to 'Back', reviews_games_path %>
