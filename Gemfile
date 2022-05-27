@@ -20,6 +20,7 @@ group :development, :test do
 end
 
 group :test do
+  gem "factory_girl_rails", "~> 4.0"
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'simplecov', :require => false
