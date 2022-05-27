@@ -15,19 +15,22 @@ RSpec.describe "game_reviews/new", type: :view do
   it "renders new game_review form" do
     render
 
+    puts @game_review
+
     assert_select "form[action=?][method=?]", game_reviews_path, "post" do
 
-      assert_select "input#game_review_name[name=?]", "game_review[name]"
+      assert_select "#game_review_name", :game_review["name"]
+      #assert_select "form#input#game_review[developer=?]", :game_review["developer"]
 
-      assert_select "input#game_review_genre[name=?]", "game_review[genre]"
+      assert_select "#game_review_genre", :game_review["genre"]
+      
+      assert_select "#game_review_stars", :game_review["stars"]
 
-      assert_select "input#game_review_developer[name=?]", "game_review[developer]"
+      assert_select "#game_review_description", :game_review["description"]
 
-      assert_select "textarea#game_review_description[name=?]", "game_review[description]"
+     # assert_select "#game_review_review", :game_review["review"]
 
-      assert_select "textarea#game_review_review[name=?]", "game_review[review]"
-
-      assert_select "input#game_review_stars[name=?]", "game_review[stars]"
+    #  assert_select "input[stars=?]", "game_review[stars]"
     end
   end
 end

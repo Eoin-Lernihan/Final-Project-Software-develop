@@ -27,8 +27,8 @@ RSpec.describe "game_reviews/index", type: :view do
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Genre".to_s, :count => 2
     assert_select "tr>td", :text => "Developer".to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 4
+    assert_select "tr>td", :text => "MyText".to_s, :count => 4
     assert_select "tr>td", :text => 2.to_s, :count => 2
   end
 end
